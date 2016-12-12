@@ -37,14 +37,77 @@
     padding: 2%;
 }
 
+/* REVIEW */
+header {
+  background-image: url("../assets/NZ (68).jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+header .intro-text {
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+header .intro-text .main-text {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+/* REVIEW */
+
+/*** About pieces ***/
+.about-thumbnail {
+  background-color: #fff;
+  width: 95%;
+}
+
+.about-title {
+  font-weight: bold;
+}
+
+.about-description {
+}
+
+.about-image {
+}
+
 h1 {
 	color: #9c9c9c;
 	font-size: 30px;
 }
 
+hr {
+    border-color: #e8e8e8;
+    border-width: 2px;
+}
+
 .site-footer {
     border-top: 1px solid #e8e8e8;
     padding: 30px 0;
+    border-bottom: 1px solid #e8e8e8;
     background-image: url("../assets/cartographer_@2X_inverse.png");
     background-size: 30%;
 }
@@ -92,4 +155,28 @@ ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #6bd3b9;
+}
+
+about-image {
+  left: 0;
+  margin-left: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  background-color: #6bd3b9;
+  color: white;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+}
+about-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    align-content: .center-block
 }
