@@ -80,7 +80,7 @@ header .intro-text .main-text {
 
 
 /** Posts */
-.post-header { margin-bottom: 20px; }
+.post-header { margin-bottom: 30px; }
 
 .post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; }
 @media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
@@ -112,6 +112,26 @@ header .intro-text .main-text {
 h1 {
 	color: #9c9c9c;
 	font-size: 30px;
+}
+
+h2 {
+  /*font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;*/
+  /*font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  /*font-family: Lato, sans-serif;
+  font-weight: bold;*/
+  color: inherit;
+  /*font-style: italic;*/
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+p {
+  /*font-family: Merriweather, serif;*/
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: 5px;
 }
 
 hr {
