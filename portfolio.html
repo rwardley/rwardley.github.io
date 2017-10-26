@@ -67,13 +67,15 @@
 			<h2>Portfolio</h2>
 		</div>
 	</div>
-		<div class="container">
-			<div class="row">
+        
+		<div class="container-fluid">
+			<div class="grid">
+                <div class="grid-sizer col-md-4 col-sm-6"></div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
 					<div class="thumbnail portfolio-thumbnail">
 						<!--UPDATE-->
             <a href="portfolio/olympics.html">
-							<img src="assets/Lab1_OlympicsInfo-thumbnail.png" alt="the state of the olympics infographic" class="img-rounded"/>
+							<img src="assets/Olympics.png" alt="the state of the olympics infographic" class="img-rounded"/>
 						</a>
 					<div class="portfolio-caption">
         				<h3 class="text-center">The State of the Olympics</h3>
@@ -81,26 +83,14 @@
         				</div>
     				</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6 portfolio-item">
 					<div class="thumbnail portfolio-thumbnail">
           <!--UPDATE-->
 						<a href="portfolio/newzealand.html">
-							<img src="assets/Lab2_NZ_terrain_thumbnail.png" alt="New Zealand terrain map" />
+							<img src="assets/Lab2_NZ_terrain_RWardley_ 2.png" alt="New Zealand terrain map" />
 						</a>
 					<div class="portfolio-caption">
         				<h3 class="text-center">Grand Tour of New Zealand</h3>
-        				<p class="text-muted"></p>
-        				</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail portfolio-thumbnail">
-          <!--UPDATE-->
-						<a href="portfolio/mucha.html">
-							<img src="assets/Mucha_tiles_thumbnail.png" alt="mucha tileset" />
-						</a>
-					<div class="portfolio-caption">
-        				<h3 class="text-center">Mucha Styled Tiles</h3>
         				<p class="text-muted"></p>
         				</div>
 					</div>
@@ -117,7 +107,19 @@
         				</div>
 					</div>
 				</div>
-                <div class="col-md-4">
+				<div class="col-md-4 col-sm-6 portfolio-item">
+					<div class="thumbnail portfolio-thumbnail">
+          <!--UPDATE-->
+						<a href="portfolio/mucha.html">
+							<img src="assets/Mucha_tiles_thumbnail.png" alt="mucha tileset" />
+						</a>
+					<div class="portfolio-caption">
+        				<h3 class="text-center">Mucha Styled Tiles</h3>
+        				<p class="text-muted"></p>
+        				</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 portfolio-item">
 					<div class="thumbnail portfolio-thumbnail">
           <!--UPDATE-->
 						<a href="portfolio/scablands.html">
@@ -129,7 +131,7 @@
         				</div>
 					</div>
 				</div>
-                <div class="col-md-4">
+				<div class="col-md-4 col-sm-6 portfolio-item">
 					<div class="thumbnail portfolio-thumbnail">
           <!--UPDATE-->
 						<a href="portfolio/switzerland.html">
@@ -141,7 +143,7 @@
         				</div>
 					</div>
 				</div>
-                <div class="col-md-4">
+				<div class="col-md-4 col-sm-6 portfolio-item">
 					<div class="thumbnail portfolio-thumbnail">
           <!--UPDATE-->
 						<a href="portfolio/apptrail.html">
@@ -179,13 +181,14 @@
 				</div>
 			</div>
 		</div>
+        
+         <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
 		<!--put your external script links here-->
-    <script type="text/javascript" src="lib/jquery3.1.1.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap.min.js"></script>
-
-        <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/masonry.js"></script>
+    <script type="text/javascript" src="lib/imagesloaded.pkgd.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -199,6 +202,19 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+        
+    <script type="text/javascript">
+        var $grid= $('.grid').masonry({
+  itemSelector: '.portfolio-item', // use a separate class for itemSelector, other than .col-
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+        
+    // layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
+        </script>    
 
 <footer class="site-footer">
 	<div class="footer-col-wrapper">

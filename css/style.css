@@ -27,12 +27,25 @@
   font-size: 16px;
 }
 
+.ijumbotron {
+    border-top: 1px solid #e8e8e8;
+    background-image: url("../assets/cartographer_@2X_inverse.png");
+    background-size: 30%;
+    border-bottom: 1px solid #e8e8e8;
+    text-align: center;
+    text-overflow: 
+    color: inherit;
+    padding: 1%;
+    height: 100px;
+}
+
 .jumbotron {
     border-top: 1px solid #e8e8e8;
     background-image: url("../assets/cartographer_@2X_inverse.png");
     background-size: 30%;
     border-bottom: 1px solid #e8e8e8;
     text-align: center;
+    text-overflow: 
     color: inherit;
     padding: 2%;
 }
@@ -40,6 +53,8 @@
 /* REVIEW */
 header {
   background-image: url("../assets/IMG_1376.jpg");
+  opacity: 0.7;
+  height: 40vh;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -127,6 +142,7 @@ h2 {
   font-size: 45px;
   letter-spacing: 2px;
 }
+
 p {
   /*font-family: Merriweather, serif;*/
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -215,3 +231,9 @@ about-image h4 {
     border-radius: 50%;
     align-content: .center-block
 }
+
+/***grid***/
+
+/*.portfolio-item {
+    height: 100px;
+}*/
