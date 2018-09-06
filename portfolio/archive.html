@@ -78,15 +78,21 @@
         <div class="post-content" itemprop="articleBody">
               <p><br />
         <strong>About:</strong>
-        A web viewer for the National Geographic Map Archive 
+        The National Geographic Map Archive web viewer was the capstone project for my Masters in Cartography and GIS program. The purpose of this project is to create an interactive, browser-based search interface to replace the existing Map Archive structure. 
         <br/>
         <br/>
         <strong>Process:</strong>
-        Relational Database. Back-end, front-end connection. Design.
+        The most crucial step for the redesign of the Map Archive was to transfer the existing metadata from the large, redundant Excel spreadsheet into a relational database, building the database in such a way as to easily allow for edits and additions in the future. 
+                  <br/>
+                  <br/>
+                  The relational database was built using PostgreSQL due to its ease in handling spatial data. Even though there aren’t any explicit geographic fields in the existing data structure I wanted to be sure to provide space for this in the future, if needed. The first step was to take the existing spreadsheet with 42 individual columns and divide these into appropriate relational tables. 
+                  <br/>
+                  <br/>
+                  Due to the duplicate nature of many of the columns it was easy to identify that they should be grouped into their own tables, a Geography table and Theme table specifically. I took the remaining fields which all held unique columns and created the master Map_Table which contained the Primary Key to connect the 3 tables together. Once the relational tables were created it was just a matter of testing out SQL statements to ensure that the data could be properly joined to create the records to be accessed via the browser archive.  
         <br/>
         <br/>
         <strong>Outcome:</strong>
-        Beta prototype</p>
+        After a five week development sprint I am proud to have created a functioning PostgreSQL database, a front-end/backend connection via a Node.js server and Express, and a working prototype to speak to <a href = "https://rwardley.github.io/map-archive/index.html">online</a>. From conceptualization to finished, beta product this project has undergone many iterations and refinements, and I’m sure will continue to do so as we grow the project at National Geographic.</p>
        
         <hr/>
 
